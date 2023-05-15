@@ -1,9 +1,5 @@
 import { GraphQLClient } from "graphql-request";
 
-// interface IHeaders {
-//   authorization: string,
-
-// }
 
 export function request({
   query,
@@ -18,6 +14,6 @@ export function request({
   };
 
   const client = new GraphQLClient("https://graphql.datocms.com", { headers });
-
+  
   return client.request(query, variables);
 }
