@@ -54,6 +54,7 @@ export default function Home(props: allPokemons) {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24`}
     >
+      <h1>Hello git</h1>
       <ul className={`flex gap-4 flex-row`}>
         {data.allArticles.map((elem) => {
           const { id, title, alt, pokemon, coverImage } = elem;
